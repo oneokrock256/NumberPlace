@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+.container{
+    width: 587.2px;
+    margin: 0 auto;
+
+}
+table{
+    border: 2px solid black;
+    border-collapse : collapse;
+}
+td{
+    border: 1px solid orange;
+    padding: 1em 1em;
+}
+
+.num{
+    width: 2em;
+}
+
+/*枠線色付け*/
+tr td:nth-child(3n):not(:last-child){
+    border-right: 2px solid red;
+}
+table tr:nth-child(3n):not(:last-child) td{
+    border-bottom: 2px solid red;
+}
+
+
+
+/*//////////////////////////////*/
+input[type=radio] {
+    display: none; /* ラジオボタンを非表示にする */
+}
+
+
+
+label{
+    float: left;
+    display: block;
+    width: 2em;
+    height: 2em;
+    background: rgb(219, 229, 250);
+    text-align: center;
+    line-height:2em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+label:hover{
+    opacity: 0.6;
+}
+
+/*クリアフィクス*/
+
+.number{
+    display:flex;
+    flex-wrap: wrap;
+    width: 150px;
+    margin: 0 auto;
+}
+.btn_num{
+    flex:  1 1 50px;
+    height: 50px;
+    background: rgb(219, 229, 250);
+}
+
+.btn_num:hover{
+    opacity: 0.6;
+}
+
+.add_class{
+    background: #99FFFF;
+}
